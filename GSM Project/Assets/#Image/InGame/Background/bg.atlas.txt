@@ -1,0 +1,47 @@
+
+bg.png
+size: 2019,1277
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 2, 193
+  size: 1922, 1082
+  orig: 1922, 1082
+  offset: 0, 0
+  index: -1
+planet
+  rotate: false
+  xy: 2, 2
+  size: 1380, 189
+  orig: 1380, 189
+  offset: 0, 0
+  index: -1
+shootingStar
+  rotate: false
+  xy: 1926, 1180
+  size: 91, 95
+  orig: 91, 95
+  offset: 0, 0
+  index: -1
+shootingStar2
+  rotate: false
+  xy: 1926, 1180
+  size: 91, 95
+  orig: 91, 95
+  offset: 0, 0
+  index: -1
+
+bg2.png
+size: 1884,1003
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+stars
+  rotate: false
+  xy: 2, 2
+  size: 1880, 999
+  orig: 1880, 999
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,111 @@
+{
+"skeleton": { "hash": "8Uz0igLCu8d9HiT4EksYHPI7TMU", "spine": "3.6.53", "width": 1922, "height": 1082, "images": "./img/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "shooting", "parent": "root", "x": 1547.47, "y": 508.27, "color": "ffcb00ff" },
+	{ "name": "shooting2", "parent": "root", "x": 383.47, "y": 768.72, "color": "ffcb00ff" },
+	{ "name": "star", "parent": "root", "x": 953.89, "y": 628.6, "color": "ac1111ff" }
+],
+"slots": [
+	{ "name": "background", "bone": "root", "attachment": "background" },
+	{ "name": "stars", "bone": "star", "attachment": "stars" },
+	{ "name": "shootingStar", "bone": "shooting2", "attachment": "shootingStar" },
+	{ "name": "shootingStar2", "bone": "shooting", "attachment": "shootingStar2" },
+	{ "name": "planet", "bone": "root", "attachment": "planet" }
+],
+"skins": {
+	"default": {
+		"background": {
+			"background": { "x": 961, "y": 541, "width": 1922, "height": 1082 }
+		},
+		"planet": {
+			"planet": { "x": 967, "y": 94.5, "width": 1380, "height": 189 }
+		},
+		"shootingStar": {
+			"shootingStar": { "x": 40.03, "y": 37.78, "width": 91, "height": 95 }
+		},
+		"shootingStar2": {
+			"shootingStar2": { "x": 34.03, "y": 33.23, "width": 91, "height": 95 }
+		},
+		"stars": {
+			"stars": { "x": -13.89, "y": -54.1, "width": 1880, "height": 999 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"shootingStar": {
+				"color": [
+					{ "time": 0, "color": "ffffff1c" },
+					{ "time": 1.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.9333, "color": "ffffffff" },
+					{ "time": 2.4333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "shootingStar" },
+					{ "time": 1.3667, "name": "shootingStar" }
+				]
+			},
+			"shootingStar2": {
+				"color": [
+					{ "time": 1.4667, "color": "ffffff24" },
+					{ "time": 2.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.7333, "color": "ffffffff" },
+					{ "time": 3.1333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.4667, "name": "shootingStar2" },
+					{ "time": 2.4, "name": "shootingStar2" },
+					{ "time": 2.7333, "name": "shootingStar2" },
+					{ "time": 3.1333, "name": "shootingStar2" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"shooting": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 94.94, "y": 147.94, "curve": "stepped" },
+					{ "time": 1.4667, "x": 94.94, "y": 147.94 },
+					{ "time": 2.4, "x": -123.34, "y": -142.45 },
+					{ "time": 2.7333, "x": -201.29, "y": -246.15 },
+					{ "time": 3.1333, "x": -294.84, "y": -370.6 }
+				]
+			},
+			"shooting2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 328.99, "y": 178.85 },
+					{ "time": 2.4333, "x": -337.92, "y": -578.48 }
+				]
+			},
+			"star": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 4, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1.2667, "x": -4.4, "y": -6.61 },
+					{ "time": 2.7333, "x": 13.57, "y": 8.24 },
+					{ "time": 4, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

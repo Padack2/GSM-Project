@@ -1,0 +1,60 @@
+
+intro.png
+size: 1926,1086
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 2, 2
+  size: 1922, 1082
+  orig: 1922, 1082
+  offset: 0, 0
+  index: -1
+
+intro2.png
+size: 1939,1129
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+error
+  rotate: false
+  xy: 1067, 2
+  size: 431, 339
+  orig: 431, 339
+  offset: 0, 0
+  index: -1
+highlight
+  rotate: false
+  xy: 2, 80
+  size: 1063, 1047
+  orig: 1063, 1047
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 1067, 343
+  size: 870, 784
+  orig: 870, 784
+  offset: 0, 0
+  index: -1
+
+intro3.png
+size: 1665,987
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+greenChar
+  rotate: false
+  xy: 990, 157
+  size: 673, 828
+  orig: 673, 828
+  offset: 0, 0
+  index: -1
+redChar
+  rotate: false
+  xy: 2, 2
+  size: 986, 983
+  orig: 986, 983
+  offset: 0, 0
+  index: -1
