@@ -3,7 +3,7 @@ Shader "TextMeshPro/Mobile/Bitmap" {
 Properties {
 	_MainTex		("Font Atlas", 2D) = "white" {}
 	_Color			("Text Color", Color) = (1,1,1,1)
-	_DiffusePower	("Diffuse Power", Range(1.0,4.0)) = 1.0
+	_Diffusepower	("Diffuse power", Range(1.0,4.0)) = 1.0
 
 	_VertexOffsetX("Vertex OffsetX", float) = 0
 	_VertexOffsetY("Vertex OffsetY", float) = 0
@@ -71,7 +71,7 @@ SubShader {
 
 		sampler2D 	_MainTex;
 		fixed4		_Color;
-		float		_DiffusePower;
+		float		_Diffusepower;
 
 		uniform float		_VertexOffsetX;
 		uniform float		_VertexOffsetY;
@@ -91,7 +91,7 @@ SubShader {
 			OUT.vertex = UnityPixelSnap(UnityObjectToClipPos(vert));
 			OUT.color = v.color;
 			OUT.color *= _Color;
-			OUT.color.rgb *= _DiffusePower;
+			OUT.color.rgb *= _Diffusepower;
 			OUT.texcoord0 = v.texcoord0;
 
 			float2 pixelSize = OUT.vertex.w;

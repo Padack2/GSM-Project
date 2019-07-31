@@ -47,11 +47,11 @@ public class MainManager : MonoBehaviour
         for(int i = 0; i <3; i++)
         {
             Image[] point = upgrade[i].GetComponentsInChildren<Image>();
-            for(int j = 0; j< (i==0?PlayerPrefs.GetInt("HP"):i==1?PlayerPrefs.GetInt("Power"):PlayerPrefs.GetInt("Assistant")); j++)
+            for(int j = 0; j< (i==0?PlayerPrefs.GetInt("HP"):i==1?PlayerPrefs.GetInt("power"):PlayerPrefs.GetInt("Assistant")); j++)
             {
                 point[j].sprite = this.point;
             }
-            int level = i == 0 ? PlayerPrefs.GetInt("HP") : i == 1 ? PlayerPrefs.GetInt("Power") : PlayerPrefs.GetInt("Assistant");
+            int level = i == 0 ? PlayerPrefs.GetInt("HP") : i == 1 ? PlayerPrefs.GetInt("power") : PlayerPrefs.GetInt("Assistant");
             int price = 0;
 
             switch (level)
@@ -73,10 +73,10 @@ public class MainManager : MonoBehaviour
             int temp = i;
             Button button = upBtn[temp];
             button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() => Upgrade(price, temp == 0 ? "HP" : temp == 1 ? "Power" : "Assistant"));
+            button.onClick.AddListener(() => Upgrade(price, temp == 0 ? "HP" : temp == 1 ? "power" : "Assistant"));
         }
         _byte.text = PlayerPrefs.GetInt("Byte").ToString();
-        int upPoint = PlayerPrefs.GetInt("HP") + PlayerPrefs.GetInt("Power") + PlayerPrefs.GetInt("Assistant");
+        int upPoint = PlayerPrefs.GetInt("HP") + PlayerPrefs.GetInt("power") + PlayerPrefs.GetInt("Assistant");
 
         player.sprite = playerImg[upPoint / 3];
     }

@@ -24,7 +24,7 @@ public class SoundManager : MonoBehaviour
         myAudio = GetComponent<AudioSource>();
     }
 
-    public void Ran(AudioClip[] audioclip)
+    public void RandomSound(AudioClip[] audioclip)
     {
         int length = audioclip.Length;
         int ran = Random.Range(0, length);
@@ -34,19 +34,19 @@ public class SoundManager : MonoBehaviour
     
     public void PlayBubble()
     {
-        Ran(bubble);
+        RandomSound(bubble);
         myAudio.PlayOneShot(bubble[num]);
     }
 
     public void PlayExplosion()
     {
-        Ran(explosion);
+        RandomSound(explosion);
         myAudio.PlayOneShot(explosion[num]);
     }
 
     public void PlayBullet()
     {
-        Ran(bullet);
+        RandomSound(bullet);
         myAudio.PlayOneShot(bullet[num]);
     }
 

@@ -60,7 +60,7 @@ float3 GetSurfaceNormal(float2 uv, float bias, float3 delta)
 float3 GetSpecular(float3 n, float3 l)
 {
 	float spec = pow(max(0.0, dot(n, l)), _Reflectivity);
-	return _SpecularColor.rgb * spec * _SpecularPower;
+	return _SpecularColor.rgb * spec * _Specularpower;
 }
 
 float4 GetGlowColor(float d, float scale)
@@ -68,7 +68,7 @@ float4 GetGlowColor(float d, float scale)
 	float glow = d - (_GlowOffset*_ScaleRatioB) * 0.5 * scale;
 	float t = lerp(_GlowInner, (_GlowOuter * _ScaleRatioB), step(0.0, glow)) * 0.5 * scale;
 	glow = saturate(abs(glow/(1.0 + t)));
-	glow = 1.0-pow(glow, _GlowPower);
+	glow = 1.0-pow(glow, _Glowpower);
 	glow *= sqrt(min(1.0, t)); // Fade off glow thinner than 1 screen pixel
 	return float4(_GlowColor.rgb, saturate(_GlowColor.a * glow * 2));
 }

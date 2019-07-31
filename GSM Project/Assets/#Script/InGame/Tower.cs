@@ -8,7 +8,7 @@ public class Tower : MonoBehaviour
 
     //information
     public Transform HPBar;
-    float maxHP = 200;
+    float maxHP = 60;
     public float HP;
 
     //Basic values
@@ -87,7 +87,8 @@ public class Tower : MonoBehaviour
                 {
                     if (time >= 0.05f)
                     {
-                        power = dbSum / count + powerLevel * 0.5f;
+                        power = dbSum / count + powerLevel * 0.5f - 5;
+                        Debug.Log(power);
                         Shoot();
                     }
                     dbSum = 0;
@@ -111,8 +112,10 @@ public class Tower : MonoBehaviour
 
     void Shoot()
     {
-        float angle = PlayerPrefs.GetFloat("Pitch") - pitchSum / count;
+        float angle = PlayerPrefs.GetFloat("Pitch") - (pitchSum / count) * 2 + 800;
         if (bullet == BulletItem.WEAKNESS_BULLET) angle = sound.PitchValue != 0? PlayerPrefs.GetFloat("Pitch") - sound.PitchValue : 0;
+
+        Debug.Log(angle);
 
         if (angle >= 500) angle = 500;
         else if (angle <= -500) angle = -500;

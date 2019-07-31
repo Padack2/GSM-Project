@@ -46,7 +46,6 @@ public class SoundAnalyze : MonoBehaviour
         {
             if (Microphone.devices.Length > 0)
             {
-
                 /*_selectedDevice = Microphone.devices[0].ToString();
                 _audioSource.outputAudioMixerGroup = _mixerGroupMicrophone;
                 _audioSource.clip = Microphone.Start(_selectedDevice, true, 10, AudioSettings.outputSampleRate);
@@ -55,7 +54,6 @@ public class SoundAnalyze : MonoBehaviour
                 audio.clip = Microphone.Start(null, true, 1, 22050);
                 audio.loop = true;
                 while (!(Microphone.GetPosition(null) > 0)) { }
-                Debug.Log("재생 시작 위치 ..." + Microphone.GetPosition(null));
                 audio.Play();
             }
             else

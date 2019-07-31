@@ -15,13 +15,14 @@ public class Intro : MonoBehaviour
     {
         introAnim = GetComponent<SkeletonAnimation>();
         StartCoroutine(IntroAnimation());
-        
+
     }
 
     IEnumerator IntroAnimation()
     {
         yield return new WaitForSeconds(2.9f);
-        SetAnimation("loading", true);    }
+        SetAnimation("loading", true);
+    }
 
     void SetAnimation(string name, bool loop)
     {

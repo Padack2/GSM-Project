@@ -22,7 +22,7 @@ Properties {
 
 	_LightAngle			("Light Angle", Range(0.0, 6.2831853)) = 3.1416
 	_SpecularColor		("Specular", Color) = (1,1,1,1)
-	_SpecularPower		("Specular", Range(0,4)) = 2.0
+	_Specularpower		("Specular", Range(0,4)) = 2.0
 	_Reflectivity		("Reflectivity", Range(5.0,15.0)) = 10
 	_Diffuse			("Diffuse", Range(0,1)) = 0.5
 	_Ambient			("Ambient", Range(1,0)) = 0.5
@@ -47,7 +47,7 @@ Properties {
 	_GlowOffset			("Offset", Range(-1,1)) = 0
 	_GlowInner			("Inner", Range(0,1)) = 0.05
 	_GlowOuter			("Outer", Range(0,1)) = 0.05
-	_GlowPower			("Falloff", Range(1, 0)) = 0.75
+	_Glowpower			("Falloff", Range(1, 0)) = 0.75
 
 	_WeightNormal		("Weight Normal", float) = 0
 	_WeightBold			("Weight Bold", float) = 0.5

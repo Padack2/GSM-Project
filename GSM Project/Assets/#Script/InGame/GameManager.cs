@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int upPoint = PlayerPrefs.GetInt("HP") + PlayerPrefs.GetInt("Power") + PlayerPrefs.GetInt("Assistant");
+        int upPoint = PlayerPrefs.GetInt("HP") + PlayerPrefs.GetInt("power") + PlayerPrefs.GetInt("Assistant");
 
         player.sprite = playerImg[upPoint / 3];
     }

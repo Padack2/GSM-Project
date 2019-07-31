@@ -32,7 +32,7 @@ uniform float4x4	_EnvMatrix;
 
 uniform fixed4		_SpecularColor;				// RGB intensity
 uniform float		_LightAngle;				// v[ 0,Tau]
-uniform float		_SpecularPower;				// v[ 0, 1]
+uniform float		_Specularpower;				// v[ 0, 1]
 uniform float		_Reflectivity;				// v[ 5, 15]
 uniform float		_Diffuse;					// v[ 0, 1]
 uniform float		_Ambient;					// v[ 0, 1]
@@ -47,7 +47,7 @@ uniform fixed4 		_GlowColor;					// RGBA : Color + Intesity
 uniform float 		_GlowOffset;				// v[-1, 1]
 uniform float 		_GlowOuter;					// v[ 0, 1]
 uniform float 		_GlowInner;					// v[ 0, 1]
-uniform float 		_GlowPower;					// v[ 1, 1/(1+4*4)]
+uniform float 		_Glowpower;					// v[ 1, 1/(1+4*4)]
 
 // API Editable properties
 uniform float 		_ShaderFlags;

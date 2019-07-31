@@ -35,7 +35,7 @@ public abstract class Bullet : MonoBehaviour
             if (collision.gameObject.GetComponentInParent<Enemy>().HP - power * 2 <= 0)
             {
                 GameManager.Instance._byte += Random.Range(1, 3);
-                GameManager.Instance._score += (int)collision.gameObject.GetComponentInParent<Enemy>().maxHP;
+                GameManager.Instance._score += (int)(collision.gameObject.GetComponentInParent<Enemy>().maxHP * 1.5f);
             }
             collision.gameObject.GetComponentInParent<Enemy>().HP -= (power * 2);
             GameManager.Instance.Explosion(transform.position, power);
